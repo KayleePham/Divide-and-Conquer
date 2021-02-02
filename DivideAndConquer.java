@@ -1,15 +1,19 @@
-//Kaylee Pham, Comp482 section# 17094 (5pm), Project #3
+/* Reads a 2 sorted lists of integer data of size N from a file, 
+stores that data into 2 linear data structures, 
+finds the average of the 2 middle elements in time O(lg n) using divide and conquer, 
+and finds the number of inversions in the list that would be created by concatinating the 2 lists in time O(n) using divide and conquer.
+*/
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Project3 {
+public class DivideAndConquer {
     private static Scanner scan;
 
     public static void main(String[] args) throws FileNotFoundException {
         // Open the file
-        File input3 = new File("C:\\Users\\kayle\\Documents\\Java\\input3.text");
+        File input3 = new File("input3.text");
 
         scan = new Scanner(input3);
         int[] array0 = new int[50];
